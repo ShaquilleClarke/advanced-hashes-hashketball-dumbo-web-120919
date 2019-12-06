@@ -234,3 +234,8 @@ def winning_team
 
   scores.max_by { |_k, v| v }.first
 end
+
+def player_with_longest_name
+  player_with_most_of(:player_name)
+end
+
